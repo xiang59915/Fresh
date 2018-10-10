@@ -29,3 +29,8 @@ class WSGI_SERVER(object):
 
         try:
           f = open("")
+
+        
+        
+if __name__ == "__main__":
+    main()
