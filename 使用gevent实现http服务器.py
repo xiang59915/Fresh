@@ -1,7 +1,8 @@
 import socket, re, gevent
 from gevent import monkey
 
-monkey.patch_all() # 猴子补丁 解阻塞
+monkey.patch_all()  # 猴子补丁 解阻塞
+
 
 def service(new_socket):
     '''服务新客户端'''
@@ -33,11 +34,12 @@ def service(new_socket):
         new_socket.send(response.encode("utf-8"))
         new_socket.send(html_content)
 
+    new_socket.close()  # 关闭套接字
 
-    new_socket.close() # 关闭套接字
+
 def main():
     tcp_server_socket = socket.socket()
-    tcp_server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1) # 避免端口占用
+    tcp_server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)  # 避免端口占用
     tcp_server_socket.bind(("", 7890))
 
     tcp_server_socket.listen(128)
@@ -46,7 +48,8 @@ def main():
         new_client, client_addr = tcp_server_socket.accept()
         gevent.spawn(service, new_client)
 
-    tcp_server_socket.close() # 关闭套接字
+    tcp_server_socket.close()  # 关闭套接字
+
 
 if __name__ == '__main__':
     main()
