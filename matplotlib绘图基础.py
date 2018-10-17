@@ -1,6 +1,6 @@
 from matplotlib import pyplot as plt
 
-x = (2, 30, 2)
+x = (0, 30, 2)
 y = [11, 22, 33, 44, 11, 22, 33, 44, 8, 9, 55, 66, 44, 33, 88]
 #设置图形大小
 plt.figure(figuresize = (15, 15) dpi = 80)
