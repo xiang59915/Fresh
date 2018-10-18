@@ -6,7 +6,7 @@ y = [11, 22, 33, 44, 11, 22, 33, 44, 8, 9, 55, 66, 44, 33, 88]
 plt.figure(figuresize = (15, 15) dpi = 80)
 # 绘制折线图  其他类型后续补充
 plt.plot(x, y)
-plt.xticks
+plt.xticks(font_manager=my_font)
 # 保存
 plt.savefig("路径.png")
 # 弹框
