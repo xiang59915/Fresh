@@ -60,3 +60,15 @@ No.26 :深入掌握ConfigParser。
 
 No.27 :使用Pandas处理大型CSV文件。
 
+No.28 :使用ElementTree解析XML。
+
+No.29 :使用traceback获取栈信息。
+
+No.30 :使用logging记录日志信息。
+
+No.31 :使用threading模块编写多线程程序。
+
+No.32 :使用Queue使用多线程编程更安全。
+
+***********
+
