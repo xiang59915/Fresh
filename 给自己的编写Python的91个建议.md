@@ -50,3 +50,13 @@ No.22 :区别动态方法和静态方法的适用场景。
 
 *********
 
+No.23 :按需求选择sort()或者sorted()。
+
+No.24 :使用copy模块深拷贝对象。
+
+No.25 :使用Counter进行计数统计。
+
+No.26 :深入掌握ConfigParser。
+
+No.27 :使用Pandas处理大型CSV文件。
+
