@@ -101,3 +101,8 @@ No.44 :使用更安全的property。
 No.45 :掌握metaclass元类。
 
 No.46 :熟悉python对象协议。
+
+No.47 :利用操作符重载实现中缀语法。
+
+No.48 :熟悉生成器yield。
+
