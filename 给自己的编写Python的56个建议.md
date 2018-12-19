@@ -97,3 +97,7 @@ No.42 :理解描述符机制。
 No.43 :区别\_\_getattr\_\_()和\_\_getattribute\_\_()方法。
 
 No.44 :使用更安全的property。
+
+No.45 :掌握metaclass元类。
+
+No.46 :熟悉python对象协议。
